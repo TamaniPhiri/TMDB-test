@@ -4,11 +4,11 @@ const Loading = () => {
       key={i}
       className="flex flex-col duration-300 w-full shadow-xl hover:shadow-2xl border overflow-hidden border-[#4c426f] rounded-2xl"
     >
-      <div className=" h-96 w-full bg-[#181818] bg-opacity-30 animate-pulse"></div>
-      <div className="p-3">
-        <div className=" h-3 w-full bg-yellow-300"></div>
-        <div className="h-3 w-full bg-red-400"></div>
-        <div className=" h-4 wf rounded-full bg-red-600">
+      <div className=" h-96 w-full bg-[#404040] animate-pulse"></div>
+      <div className="p-3 flex flex-col gap-2">
+        <div className=" h-3 w-1/4 bg-[#404040] rounded-full animate-pulse"></div>
+        <div className="h-3 w-full bg-[#404040] rounded-full animate-pulse"></div>
+        <div className=" h-4 bg-[#404040] rounded-full animate-pulse">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Et id
           nesciunt eligendi saepe natus suscipit? Harum eos error recusandae
           assumenda porro delectus alias eligendi, ratione minima, ut debitis?
