@@ -22,7 +22,7 @@ const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
       <div className="p-3">
         <h1 className=" font-bold">{movie.title}</h1>
         <p className="text-[#BFCDE0]">{moment(movie.release_date).format("ll")}</p>
-        <p className="">{movie.original_language}</p>
+        <p className="">{movie.original_language.toUpperCase()}</p>
       </div>
     </div>
   );
