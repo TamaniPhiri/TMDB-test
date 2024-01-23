@@ -27,11 +27,14 @@ const Home = () => {
     return <ErrorDisplay />;
   }
   return (
-    <section className="min-h-screen gap-4 md:gap-8 lg:gap-12 grid md:grid-cols-3 lg:grid-cols-4 w-full">
-      {movies.map((movie, i) => (
-        <MovieCard key={i} movie={movie} />
-      ))}
-    </section>
+    <div className="py-16 min-h-screen w-full">
+      <h1 className=" text-center text-4xl font-bold">Popular movies</h1>
+      <section className=" gap-4 md:gap-8 lg:gap-12 py-8 grid md:grid-cols-3 lg:grid-cols-4 w-full">
+        {movies.map((movie, i) => (
+          <MovieCard key={i} movie={movie} />
+        ))}
+      </section>
+    </div>
   );
 };
 
