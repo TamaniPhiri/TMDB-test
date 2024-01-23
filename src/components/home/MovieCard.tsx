@@ -9,7 +9,7 @@ interface MovieCardProps {
 
 const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
   return (
-    <div className="flex flex-col hover:scale-[101%] duration-300 w-full shadow-xl hover:shadow-2xl border overflow-hidden border-[#4c426f] rounded-2xl">
+    <div className="flex flex-col hover:scale-[101%] relative duration-300 w-full shadow-xl hover:shadow-2xl border overflow-hidden border-[#4c426f] rounded-2xl">
       <div className="relative h-96">
         <IconHeart movie={movie} />
         <img
@@ -19,13 +19,14 @@ const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
           className=" object-cover w-full h-full aspect-auto"
         />
       </div>
-      <div className="p-3">
+      <div className="p-3 bg-[#3B3355] flex-1">
         <h1 className=" font-bold">{movie.title}</h1>
         <p className="text-[#BFCDE0]">
           {moment(movie.release_date).format("ll")}
         </p>
         <p className="">{movie.original_language.toUpperCase()}</p>
       </div>
+      <div className="absolute text-sm">{movie.overview}</div>
     </div>
   );
 };
