@@ -9,7 +9,7 @@ const Home = () => {
     UseGet({ endpoint: "movie/popular" }),
     {
       onSuccess: (data) => {
-        console.log(data);
+        console.log(data.results);
       },
     }
   );
