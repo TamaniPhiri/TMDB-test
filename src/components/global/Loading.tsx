@@ -1,7 +1,7 @@
 const Loading = () => {
   const skeletonItems = Array.from({ length: 8 }, (_, i) => (
     <div key={i} className={styles.card}>
-      <div className=" h-96 w-full bg-[#404040] animate-pulse"></div>
+      <div className={styles.imgSkeleton}></div>
       <div className="p-3 flex flex-col gap-2">
         <div className=" h-3 w-1/4 bg-[#404040] rounded-full animate-pulse"></div>
         <div className="h-3 w-full bg-[#404040] rounded-full animate-pulse"></div>
@@ -31,4 +31,5 @@ const styles = {
     "gap-8 lg:gap-12 py-8 grid md:grid-cols-3 lg:grid-cols-4 w-full",
   skeletonContainer:
     "gap-8 lg:gap-12 grid md:grid-cols-3 py-8 lg:grid-cols-4 w-full min-h-screen px-4 md:px-12",
+  imgSkeleton: " h-96 w-full bg-[#404040] animate-pulse",
 };
