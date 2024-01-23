@@ -31,8 +31,7 @@ const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
           onClick={() => setOpenOverview(!openOverview)}
           className=" absolute bottom-3 right-3 group-hover:translate-x-0 translate-x-[500px] duration-300"
         >
-          {" "}
-          hello
+          Overview
         </button>
       </div>
 
