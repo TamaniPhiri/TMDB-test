@@ -27,7 +27,7 @@ const Home = () => {
     return <ErrorDisplay />;
   }
   return (
-    <section className="py-16 min-h-screen w-full px-4 md:px-12">
+    <section className={styles.container}>
       <h1 className=" text-center text-4xl font-bold">Popular movies</h1>
       <main className="gap-8 lg:gap-12 py-8 grid md:grid-cols-3 lg:grid-cols-4 w-full">
         {movies.map((movie, i) => (
@@ -41,5 +41,5 @@ const Home = () => {
 export default Home;
 
 const styles = {
-  container: "min-h-screen",
+  container: "py-16 min-h-screen w-full px-4 md:px-12",
 };
