@@ -13,9 +13,9 @@ const Loading = () => {
     </div>
   ));
   return (
-    <div className="py-16">
+    <div className="py-16 px-4 md:px-12">
       <div className=" flex w-full items-center justify-center">
-        <h1 className="h-8 w-96 bg-[#404040] rounded-full"></h1>
+        <h1 className="h-8 md:w-96 w-full bg-[#404040] rounded-full animate-pulse"></h1>
       </div>
       <div className={styles.skeletonContainer}>{skeletonItems}</div>
     </div>
@@ -30,7 +30,7 @@ const styles = {
   cardContainer:
     "gap-8 lg:gap-12 py-8 grid md:grid-cols-3 lg:grid-cols-4 w-full",
   skeletonContainer:
-    "gap-8 lg:gap-12 grid md:grid-cols-3 py-8 lg:grid-cols-4 w-full min-h-screen px-4 md:px-12",
+    "gap-8 lg:gap-12 grid md:grid-cols-3 py-8 lg:grid-cols-4 w-full min-h-screen",
   imgSkeleton: " h-96 w-full bg-[#404040] animate-pulse",
   metaSkeleton: "p-3 flex flex-col gap-2",
   date: "h-3 w-full bg-[#404040] rounded-full animate-pulse",
