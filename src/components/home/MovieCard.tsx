@@ -7,14 +7,16 @@ interface MovieCardProps {
 
 const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
   return (
-    <div className="flex flex-col w-full border overflow-hidden border-gray-700 rounded-2xl">
+    <div className="flex flex-col group w-full border overflow-hidden border-gray-700 rounded-2xl">
       <img
-        src={IMG_BASE_URL+movie.poster_path}
+        src={IMG_BASE_URL + movie.poster_path}
         alt="movieImg"
         loading="lazy"
-        className=" object-cover w-full h-96 aspect-auto"
+        className=" object-cover w-full h-96 aspect-auto group-hover:scale-105"
       />
-      <h1>{movie.title}</h1>
+      <div className="">
+        <h1>{movie.title}</h1>
+      </div>
     </div>
   );
 };
