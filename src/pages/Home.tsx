@@ -1,6 +1,6 @@
 const Home = () => {
   return (
-    <section>
+    <section className=" bg-red-400">
       home
     </section>
   )
