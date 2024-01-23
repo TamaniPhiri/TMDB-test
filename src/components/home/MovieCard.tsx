@@ -28,8 +28,9 @@ const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
           {movie.overview}
         </div>
         <button
-          onClick={() => setOpenOverview(!openOverview)}
-          className=" absolute bottom-3 right-3 group-hover:translate-x-0 translate-x-[500px] duration-300"
+          onMouseEnter={() => setOpenOverview(true)}
+          onMouseLeave={() => setOpenOverview(false)}
+          className=" absolute bottom-3 right-3 p-2 bg-[#3B3355] shadow border-white border rounded-full group-hover:translate-x-0 translate-x-[500px] duration-300"
         >
           Overview
         </button>
