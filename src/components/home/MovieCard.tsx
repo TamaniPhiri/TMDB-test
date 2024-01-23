@@ -19,14 +19,14 @@ const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
           className=" object-cover w-full h-full aspect-auto"
         />
       </div>
-      <div className="p-3 bg-[#3B3355] flex-1">
+      <div className="p-3 flex-1">
         <h1 className=" font-bold">{movie.title}</h1>
         <p className="text-[#BFCDE0]">
           {moment(movie.release_date).format("ll")}
         </p>
         <p className="">{movie.original_language.toUpperCase()}</p>
       </div>
-      <div className="absolute text-sm">{movie.overview}</div>
+      <div className="absolute text-sm p-3 flex-1 bg-[#2c2c2c]">{movie.overview}</div>
     </div>
   );
 };
