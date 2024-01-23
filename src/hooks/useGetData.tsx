@@ -4,7 +4,7 @@ import { API_KEY, API_URL } from "../constants/api";
 
 interface GetDataProps {
   endpoint: string;
-  page?:number;
+  page?: number;
 }
 
 export const UseGet = ({
@@ -15,7 +15,7 @@ export const UseGet = ({
     const res = await axios.get(API_URL + endpoint, {
       params: {
         api_key: API_KEY,
-        page:page
+        page: page,
       },
     });
     return res.data;
