@@ -18,7 +18,7 @@ const Home = () => {
     }
   );
 
-  if (isLoading) {
+  if (!isLoading) {
     return <Loading />;
   }
 
@@ -42,6 +42,5 @@ export default Home;
 const styles = {
   container: "py-16 min-h-screen w-full px-4 md:px-12",
   heading: " text-center text-4xl font-bold",
-  cardContainer:
-    "gap-8 lg:gap-12 py-8 grid md:grid-cols-3 lg:grid-cols-4 w-full",
+  cardContainer:"gap-8 lg:gap-12 py-8 grid md:grid-cols-3 lg:grid-cols-4 w-full"
 };
