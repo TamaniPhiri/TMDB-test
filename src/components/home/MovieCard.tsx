@@ -18,7 +18,11 @@ const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
           loading="lazy"
           className=" object-cover w-full h-full aspect-auto"
         />
+        <div className="absolute text-sm p-3 flex-1 bg-[#2c2c2c] bottom-0">
+          {movie.overview}
+        </div>
       </div>
+
       <div className="p-3 flex-1">
         <h1 className=" font-bold">{movie.title}</h1>
         <p className="text-[#BFCDE0]">
@@ -26,7 +30,6 @@ const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
         </p>
         <p className="">{movie.original_language.toUpperCase()}</p>
       </div>
-      <div className="absolute text-sm p-3 flex-1 bg-[#2c2c2c]">{movie.overview}</div>
     </div>
   );
 };
