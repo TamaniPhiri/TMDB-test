@@ -1,3 +1,4 @@
+import moment from "moment";
 import { IMG_BASE_URL } from "../../constants/api";
 import { IMovie } from "../../types/interface";
 import IconHeart from "../icons/IconHeart";
@@ -20,7 +21,8 @@ const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
       </div>
       <div className="p-3">
         <h1 className=" font-bold">{movie.title}</h1>
-        <p>{movie.release_date}</p>
+        <p className="text-[#BFCDE0]">{moment(movie.release_date).format("ll")}</p>
+        <p className="">{movie.original_language}</p>
       </div>
     </div>
   );
