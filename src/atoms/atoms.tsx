@@ -5,3 +5,8 @@ export const movieAtomState = atom<IMovie[]>({
   key: "movieAtom",
   default: [],
 });
+
+export const likedMoviesState = atom<IMovie[]>({
+  key: "likedMovies",
+  default: [],
+});
