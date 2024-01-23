@@ -18,7 +18,7 @@ const Home = () => {
     }
   );
 
-  if (isLoading) {
+  if (!isLoading) {
     return <Loading />;
   }
 
