@@ -14,6 +14,7 @@ const Home = () => {
     {
       onSuccess: (data) => {
         setMovies(data?.results);
+        console.log(data.results);
       },
     }
   );
