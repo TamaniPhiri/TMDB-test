@@ -1,3 +1,4 @@
+import { IMG_BASE_URL } from "../../constants/api";
 import { IMovie } from "../../types/interface";
 
 interface MovieCardProps {
@@ -6,12 +7,12 @@ interface MovieCardProps {
 
 const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
   return (
-    <div className="flex flex-col w-full border rounded-2xl">
+    <div className="flex flex-col w-full border overflow-hidden border-gray-700 rounded-2xl">
       <img
-        src={movie.poster_path}
+        src={IMG_BASE_URL+movie.poster_path}
         alt="movieImg"
         loading="lazy"
-        className=" object-cover w-full h-56"
+        className=" object-cover w-full h-96 aspect-auto"
       />
       <h1>{movie.title}</h1>
     </div>
