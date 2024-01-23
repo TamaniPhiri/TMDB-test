@@ -20,7 +20,11 @@ const Home = () => {
   if (isError) {
     return <ErrorDisplay />;
   }
-  return <section className=" bg-red-400">home</section>;
+  return <section className=" min-h-[300vh]">home</section>;
 };
 
 export default Home;
+
+const styles={
+    container:""
+}

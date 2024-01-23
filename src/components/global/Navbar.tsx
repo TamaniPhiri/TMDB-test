@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className={styles.nav}>
+    <nav style={{backdropFilter:"blur(10px)"}} className={styles.nav}>
       <Link to={"/"} className={styles.links}>
         Home
       </Link>
@@ -17,5 +17,5 @@ export default Navbar;
 
 const styles = {
   links: "hover:text-[#BFCDE0] duration-300",
-  nav: "w-full items-center flex justify-between py-4 shadow",
+  nav: "w-full items-center flex justify-between py-4 shadow sticky top-0 bg-[#2c2c2c] bg-opacity-50",
 };
