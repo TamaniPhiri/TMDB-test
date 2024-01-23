@@ -14,8 +14,8 @@ const Loading = () => {
   ));
   return (
     <div className={styles.container}>
-      <div className=" flex w-full items-center justify-center">
-        <h1 className="h-8 md:w-96 w-full bg-[#404040] rounded-full animate-pulse"></h1>
+      <div className={styles.headerContainer}>
+        <h1 className={styles.headingCard}></h1>
       </div>
       <div className={styles.skeletonContainer}>{skeletonItems}</div>
     </div>
@@ -36,4 +36,6 @@ const styles = {
   date: "h-3 w-full bg-[#404040] rounded-full animate-pulse",
   p: " h-3 bg-[#404040] w-1/2 text-transparent rounded-full animate-pulse",
   container: "py-16 px-4 md:px-12",
+  headerContainer: " flex w-full items-center justify-center",
+  headingCard: "h-8 md:w-96 w-full bg-[#404040] rounded-full animate-pulse",
 };
