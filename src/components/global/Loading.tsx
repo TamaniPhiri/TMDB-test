@@ -13,12 +13,12 @@ const Loading = () => {
     </div>
   ));
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <div className={styles.headerContainer}>
         <h1 className={styles.headingCard}></h1>
       </div>
-      <div className={styles.skeletonContainer}>{skeletonItems}</div>
-    </div>
+      <main className={styles.skeletonContainer}>{skeletonItems}</main>
+    </section>
   );
 };
 
