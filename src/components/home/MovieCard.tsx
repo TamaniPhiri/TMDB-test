@@ -18,7 +18,7 @@ const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
           src={IMG_BASE_URL + movie.poster_path}
           alt="movieImg"
           loading="lazy"
-          className=" object-cover w-full h-full aspect-auto"
+          className={styles.img}
         />
         <div
           className={`absolute text-sm p-3 flex-1 bg-[#2c2c2c] duration-300 top-0 ${
@@ -30,7 +30,7 @@ const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
         <button
           onMouseEnter={() => setOpenOverview(true)}
           onMouseLeave={() => setOpenOverview(false)}
-          className=" absolute bottom-3 right-3 p-2 bg-[#3B3355] shadow border-white border-[0.2px] rounded-full group-hover:translate-x-0 translate-x-[500px] duration-300"
+          className={styles.overviewBtn}
         >
           Overview
         </button>
@@ -52,4 +52,7 @@ export default MovieCard;
 const styles = {
   cardContainer:
     "flex flex-col hover:scale-[101%] group relative duration-300 w-full shadow-xl hover:shadow-2xl border overflow-hidden border-[#4c426f] rounded-2xl",
+  overviewBtn:
+    " absolute bottom-3 right-3 p-2 bg-[#3B3355] shadow border-white border-[0.2px] rounded-full group-hover:translate-x-0 translate-x-[500px] duration-300",
+  img: " object-cover w-full h-full aspect-auto",
 };
