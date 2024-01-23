@@ -10,7 +10,7 @@ const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
   return (
     <div className="flex flex-col hover:scale-[101%] duration-300 w-full border overflow-hidden border-gray-700 rounded-2xl">
       <div className="relative h-96">
-        <IconHeart/>
+        <IconHeart />
         <img
           src={IMG_BASE_URL + movie.poster_path}
           alt="movieImg"
@@ -18,8 +18,9 @@ const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
           className=" object-cover w-full h-full aspect-auto"
         />
       </div>
-      <div className="p-4">
+      <div className="p-3">
         <h1 className=" font-bold">{movie.title}</h1>
+        <p>{movie.release_date}</p>
       </div>
     </div>
   );
