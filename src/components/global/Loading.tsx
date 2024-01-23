@@ -8,7 +8,7 @@ const Loading = () => {
       <div className="p-3 flex flex-col gap-2">
         <div className=" h-3 w-1/4 bg-[#404040] rounded-full animate-pulse"></div>
         <div className="h-3 w-full bg-[#404040] rounded-full animate-pulse"></div>
-        <div className=" h-4 bg-[#404040] w-1/2 text-transparent rounded-full animate-pulse">
+        <div className=" h-3 bg-[#404040] w-1/2 text-transparent rounded-full animate-pulse">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Et id
           nesciunt eligendi saepe natus suscipit? Harum eos error
         </div>
