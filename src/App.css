@@ -4,6 +4,8 @@
 
 body {
   overflow-x: hidden;
+  background: #404040;
+  color: white;
 }
 
 * {
