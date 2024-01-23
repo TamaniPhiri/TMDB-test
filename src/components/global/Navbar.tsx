@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav style={{backdropFilter:"blur(10px)"}} className={styles.nav}>
+    <nav style={{ backdropFilter: "blur(10px)" }} className={styles.nav}>
       <Link to={"/"} className={styles.links}>
         Home
       </Link>
