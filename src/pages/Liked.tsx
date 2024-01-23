@@ -4,8 +4,6 @@ import MovieCard from "../components/home/MovieCard";
 
 const Liked = () => {
   const Liked = useRecoilValue(likedMoviesState);
-  console.log(Liked);
-
   return (
     <div>
       {Liked.map((movie, i) => (
