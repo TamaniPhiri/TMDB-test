@@ -5,8 +5,8 @@ interface LayoutProps {
 }
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div className="w-full items-center justify-center px-4 md:px-12 max-w-7xl bg-yellow-200 mx-auto flex flex-col">
-      <Navbar/>
+    <div className="w-full items-center justify-center px-4 md:px-12 max-w-7xl mx-auto flex flex-col">
+      <Navbar />
       <main>{children}</main>
     </div>
   );
