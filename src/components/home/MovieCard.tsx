@@ -22,7 +22,7 @@ const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
         />
         <div
           className={`absolute text-sm p-3 flex-1 bg-[#2c2c2c] duration-300 top-0 ${
-            openOverview ? "translate-y-0" : " translate-y-[500px]"
+            openOverview ? "translate-y-0" : "-translate-y-[500px]"
           }`}
         >
           {movie.overview}
