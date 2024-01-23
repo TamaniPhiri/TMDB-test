@@ -5,7 +5,7 @@ const Loading = () => {
       <div className={styles.metaSkeleton}>
         <div className={styles.heading}></div>
         <div className={styles.date}></div>
-        <div className=" h-3 bg-[#404040] w-1/2 text-transparent rounded-full animate-pulse">
+        <div className={styles.p}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Et id
           nesciunt eligendi saepe natus suscipit? Harum eos error
         </div>
@@ -13,7 +13,7 @@ const Loading = () => {
     </div>
   ));
   return (
-    <div className="py-16 px-4 md:px-12">
+    <div className={styles.container}>
       <div className=" flex w-full items-center justify-center">
         <h1 className="h-8 md:w-96 w-full bg-[#404040] rounded-full animate-pulse"></h1>
       </div>
@@ -34,4 +34,6 @@ const styles = {
   imgSkeleton: " h-96 w-full bg-[#404040] animate-pulse",
   metaSkeleton: "p-3 flex flex-col gap-2",
   date: "h-3 w-full bg-[#404040] rounded-full animate-pulse",
+  p: " h-3 bg-[#404040] w-1/2 text-transparent rounded-full animate-pulse",
+  container: "py-16 px-4 md:px-12",
 };
