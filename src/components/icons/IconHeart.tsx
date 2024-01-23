@@ -25,11 +25,12 @@ const IconHeart: React.FC<IconProps> = ({ movie }) => {
   return (
     <button
       onClick={() => handleLike(movie)}
-      className="rounded-full p-1 bg-[#2c2c2c] absolute top-3 right-3 hover:scale-105 duration-500 active:scale-95"
+      className="rounded-full p-1 bg-[#2c2c2c] absolute top-3 right-3 hover:scale-105 duration-200 active:scale-90"
     >
       <svg
         viewBox="0 0 1024 1024"
-        fill={isLiked ? "red" : "currentColor"}
+        fill={isLiked ? "#ef4444" : "currentColor"}
+        strokeWidth={1.2}
         height="2em"
         width="2em"
       >
