@@ -1,9 +1,11 @@
-const MovieCard = () => {
-  return (
-    <div>
-      movie
-    </div>
-  )
+import { IMovie } from "../../types/interface";
+
+interface MovieCardProps {
+  movie: IMovie;
 }
 
-export default MovieCard
+const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
+  return <div>{movie.overview}</div>;
+};
+
+export default MovieCard;
