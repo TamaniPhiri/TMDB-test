@@ -26,7 +26,7 @@ const Home = () => {
     return <ErrorDisplay />;
   }
   return (
-    <section className={styles.container}>
+    <section className="min-h-screen gap-4 grid md:grid-cols-3 lg:grid-cols-4 w-full">
       {movies.map((movie, i) => (
         <MovieCard key={i} movie={movie} />
       ))}
