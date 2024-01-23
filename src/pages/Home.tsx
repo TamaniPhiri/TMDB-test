@@ -6,6 +6,7 @@ import { IMovieResponse } from "../types/interface";
 import { useRecoilState } from "recoil";
 import { movieAtomState } from "../atoms/atoms";
 import MovieCard from "../components/home/MovieCard";
+
 const Home = () => {
   const [movies, setMovies] = useRecoilState(movieAtomState);
   const { isError, isLoading } = useQuery<IMovieResponse>(
@@ -25,6 +26,7 @@ const Home = () => {
   if (isError) {
     return <ErrorDisplay />;
   }
+
   return (
     <section className={styles.container}>
       <h1 className={styles.heading}>Popular movies</h1>
@@ -42,5 +44,6 @@ export default Home;
 const styles = {
   container: "py-16 min-h-screen w-full px-4 md:px-12",
   heading: " text-center text-4xl font-bold",
-  cardContainer:"gap-8 lg:gap-12 py-8 grid md:grid-cols-3 lg:grid-cols-4 w-full"
+  cardContainer:
+    "gap-8 lg:gap-12 py-8 grid md:grid-cols-3 lg:grid-cols-4 w-full",
 };
