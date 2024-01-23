@@ -23,7 +23,7 @@ const Home = () => {
     return <Loading />;
   }
 
-  if (isError) {
+  if (!isError) {
     return <ErrorDisplay />;
   }
 
