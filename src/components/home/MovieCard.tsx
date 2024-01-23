@@ -11,7 +11,7 @@ interface MovieCardProps {
 const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
   const [openOverview, setOpenOverview] = useState<boolean>(false);
   return (
-    <div className="flex flex-col hover:scale-[101%] group relative duration-300 w-full shadow-xl hover:shadow-2xl border overflow-hidden border-[#4c426f] rounded-2xl">
+    <div className={styles.cardContainer}>
       <div className="relative h-96">
         <IconHeart movie={movie} />
         <img
@@ -48,3 +48,8 @@ const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
 };
 
 export default MovieCard;
+
+const styles = {
+  cardContainer:
+    "flex flex-col hover:scale-[101%] group relative duration-300 w-full shadow-xl hover:shadow-2xl border overflow-hidden border-[#4c426f] rounded-2xl",
+};
