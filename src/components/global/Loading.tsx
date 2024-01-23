@@ -18,7 +18,7 @@ const Loading = () => {
     </div>
   ));
   return (
-    <div className="gap-8 lg:gap-12 py-8 grid md:grid-cols-3 lg:grid-cols-4 w-full py-16 min-h-screen px-4 md:px-12">
+    <div className="gap-8 lg:gap-12 grid md:grid-cols-3 lg:grid-cols-4 w-full py-16 min-h-screen px-4 md:px-12">
       {skeletonItems}
     </div>
   );
