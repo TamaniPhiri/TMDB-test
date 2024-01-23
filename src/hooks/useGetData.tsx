@@ -7,7 +7,7 @@ interface GetDataProps {
 
 export const UseGet = ({
   endpoint,
-}: GetDataProps): (() => Promise<AxiosResponse>) => {
+}: GetDataProps): (() => Promise<AxiosResponse | any>) => {
   return async () => {
     const res = await axios.get(API_URL + endpoint, {
       params: {
